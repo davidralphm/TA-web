@@ -9926,10 +9926,10 @@ var wasmImports = {
 var wasmExports = createWasm();
 var ___wasm_call_ctors = createExportWrapper('__wasm_call_ctors');
 var _main = Module['_main'] = createExportWrapper('__main_argc_argv');
-var _free = createExportWrapper('free');
 var _malloc = createExportWrapper('malloc');
-var setTempRet0 = createExportWrapper('setTempRet0');
+var _free = createExportWrapper('free');
 var ___errno_location = createExportWrapper('__errno_location');
+var setTempRet0 = createExportWrapper('setTempRet0');
 var _fflush = Module['_fflush'] = createExportWrapper('fflush');
 var _fileno = createExportWrapper('fileno');
 var _setThrew = createExportWrapper('setThrew');
@@ -9941,10 +9941,10 @@ var stackSave = createExportWrapper('stackSave');
 var stackRestore = createExportWrapper('stackRestore');
 var stackAlloc = createExportWrapper('stackAlloc');
 var _emscripten_stack_get_current = () => (_emscripten_stack_get_current = wasmExports['emscripten_stack_get_current'])();
-var dynCall_ji = Module['dynCall_ji'] = createExportWrapper('dynCall_ji');
 var dynCall_jiji = Module['dynCall_jiji'] = createExportWrapper('dynCall_jiji');
 var dynCall_jij = Module['dynCall_jij'] = createExportWrapper('dynCall_jij');
 var dynCall_iij = Module['dynCall_iij'] = createExportWrapper('dynCall_iij');
+var dynCall_ji = Module['dynCall_ji'] = createExportWrapper('dynCall_ji');
 
 function invoke_ii(index,a1) {
   var sp = stackSave();
